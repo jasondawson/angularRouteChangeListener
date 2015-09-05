@@ -29,10 +29,11 @@ angular
     $rootScope.$on('$routeChangeStart', function(event, next, current) {
       if(next.$$route.originalPath === '/view2') {
         $rootScope.view2 = true;
-        console.log($rootScope.view2);
+        // console.log($rootScope.view2);
       } else {
+        $rootScope.view2Text = '';
         $rootScope.view2 = false;
-        console.log($rootScope.view2);
+        // console.log($rootScope.view2);
       }
       // console.log(current, next);
     })

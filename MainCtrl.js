@@ -15,7 +15,7 @@ angular
         if(!$rootScope.view2) {
           $location.path('/view2');
         } else {
-          console.log('on view2, emitting submitText event')
+          // console.log('on view2, emitting submitText event')
           $rootScope.$broadcast('submitText', $rootScope.view2);
         }
         vm.inputText = '';
